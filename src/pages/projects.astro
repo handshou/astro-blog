@@ -1,0 +1,52 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Card from '../components/Card.astro';
+
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+
+// Use Astro.glob() to fetch all posts, and then sort them by date.
+const projects = (await Astro.glob('./projects/*.{md,mdx}')).sort(
+	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.project-content {
+				display: flex;
+				width: 720px;
+				flex-direction: row;
+				justify-content: flex-start;
+				flex-wrap: wrap;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section>
+				<div class="project-content">
+					{
+						projects.map((proj) => (
+							<Card 
+								title={proj.frontmatter.title}
+								footer={`Updated ${
+									new Date(proj.frontmatter.pubDate).toLocaleDateString('en-us', {
+										year: 'numeric',
+										month: 'short',
+										day: 'numeric',
+								})}`}
+								url={proj.url}>
+								{proj.frontmatter.description}
+							</Card>
+						))
+					}
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

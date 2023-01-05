@@ -21,6 +21,9 @@ const {
 </div>
 
 <style lang="scss" is:global>
+  .card__content a:visited {
+    color: #8e32dc;
+  }
   .card {
     display: flex;
     flex-direction: column;
@@ -30,6 +33,7 @@ const {
     min-height: 100%;
     position: relative;
     overflow: hidden;
+    flex-grow: 1;
     transition: box-shadow 0.15s ease-in-out;
     &:hover,
     &:focus-within {
