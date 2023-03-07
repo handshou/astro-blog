@@ -23,11 +23,6 @@ import { SITE_TITLE } from '../config';
 		<div class="wrapper"></div>
 	</nav>
 </header>
-<body class="bg">
-	<div class="content">
-		<slot />
-	</div>
-</body>
 <style>
 	.tabs {
 		display: flex;
@@ -80,24 +75,6 @@ import { SITE_TITLE } from '../config';
 		border-width: 5px 5px;
 		border-color: #5e5e5e;
 	}
-	.content {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		padding: 0 0.5em 0.5em 0.5em;
-		filter: drop-shadow(0px 2px 3px #5e5e5e);
-		background-color: #fefefe;
-		border-radius: 0 0 0.5em 0.5em;
-		border-style: solid;
-		border-width: 0.1em;
-		border-color: #5e5e5e;
-		height: 75vh;
-	}
-	.bg {
-		display: flex;
-		flex-direction: column;
-		background-color: #eeeeee;
-    }
 
 	/* header {
 		margin: 0em 0 2em;
