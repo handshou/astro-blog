@@ -1,6 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
+import Browser from '../components/Browser.astro';
 
 export interface Props {
 	content: {
@@ -33,22 +33,23 @@ const {
 	</head>
 
 	<body>
-		<Header />
-		<main>
-			<article>
-				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-				<h1 class="title">{title}</h1>
-				{pubDate && <time>{pubDate}</time>}
-				{
-					updatedDate && (
-						<div>
-							Last updated on <time>{updatedDate}</time>
-						</div>
-					)
-				}
-				<hr />
-				<slot />
-			</article>
-		</main>
+		<Browser>
+			<main>
+				<article>
+					{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
+					<h1 class="title">{title}</h1>
+					{pubDate && <time>{pubDate}</time>}
+					{
+						updatedDate && (
+							<div>
+								Last updated on <time>{updatedDate}</time>
+							</div>
+						)
+					}
+					<hr />
+					<slot />
+				</article>
+			</main>
+		</Browser>
 	</body>
 </html>

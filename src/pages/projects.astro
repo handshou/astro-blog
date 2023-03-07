@@ -1,6 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
+import Browser from '../components/Browser.astro';
 import Card from '../components/Card.astro';
 
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
@@ -26,27 +26,28 @@ const projects = (await Astro.glob('./projects/*.{md,mdx}')).sort(
 		</style>
 	</head>
 	<body>
-		<Header />
-		<main>
-			<section>
-				<div class="project-content">
-					{
-						projects.map((proj) => (
-							<Card 
-								title={proj.frontmatter.title}
-								footer={`Updated ${
-									new Date(proj.frontmatter.pubDate).toLocaleDateString('en-us', {
-										year: 'numeric',
-										month: 'short',
-										day: 'numeric',
-								})}`}
-								url={proj.url}>
-								{proj.frontmatter.description}
-							</Card>
-						))
-					}
-				</div>
-			</section>
-		</main>
+		<Browser>
+			<main>
+				<section>
+					<div class="project-content">
+						{
+							projects.map((proj) => (
+								<Card 
+									title={proj.frontmatter.title}
+									footer={`Updated ${
+										new Date(proj.frontmatter.pubDate).toLocaleDateString('en-us', {
+											year: 'numeric',
+											month: 'short',
+											day: 'numeric',
+									})}`}
+									url={proj.url}>
+									{proj.frontmatter.description}
+								</Card>
+							))
+						}
+					</div>
+				</section>
+			</main>
+		</Browser>
 	</body>
 </html>
