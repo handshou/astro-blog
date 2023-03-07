@@ -17,11 +17,11 @@ const projects = (await Astro.glob('./projects/*.{md,mdx}')).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			.project-content {
-				display: flex;
-				width: 720px;
-				flex-direction: row;
-				justify-content: flex-start;
-				flex-wrap: wrap;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+				justify-content: center;
+				gap: 1rem;
+				padding: 0;
 			}
 		</style>
 	</head>
