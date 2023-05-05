@@ -14,12 +14,41 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 			<main class="content">
 				<h1>🧑🏽‍🌾 gardener</h1>
 				<p>
-					Hello! This is my garden.
+					Welcome to my garden 🪧
 				</p>
-				I write about cycling, hardship and photography.
-				<p>
-					Built on Astro and Notion.
-				</p>
+				    Look forward to...
+                    <ul class="list">
+                        <li>
+                            Tend the 
+                            <a href="/blog">
+                                <b>🪴 garden</b>
+                            </a>
+                        </li>
+                        
+                        {/*
+                        <li>
+                            Go on a cycling 
+                            <a href="/journey">
+                                <b>🚴 journey</b>
+                             </a>
+                        </li>
+                        */}
+
+                        <li>
+                            See tech 
+                            <a href="/projects">
+                                <b>👨‍💻 projects</b>
+                            </a>
+                        </li>
+                        {/*
+                        <li>
+                            Browse photo 
+                            <a href="albums">
+                                <b>📷 albums</b> 
+                            </a>
+                        </li>
+                        */}
+                    </ul>
 			</main>
 		</Browser>
 	</body>
@@ -31,4 +60,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 		align-items: center;
 		flex-direction: column;
 	}
+    :visited {
+        text-decoration-color: #EEE;
+    }
 </style>

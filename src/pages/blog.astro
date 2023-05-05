@@ -14,6 +14,11 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
+			h1 {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+			}
 			ul {
 				list-style-type: none;
 				padding: unset;
@@ -34,6 +39,9 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 	<body>
 		<Browser>
 			<main>
+                <h1>
+                    🪴 garden 
+                </h1>
 				<section>
 					<ul>
 						{
