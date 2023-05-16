@@ -1,11 +1,15 @@
 ---
 layout: "../../layouts/Projects.astro"
-title: "Lex reading club"
-description: "Reading with Lex Fridman"
-pubDate: "Jan 02 2023"
-# heroImage: "/placeholder-hero.jpg"
+title: "Personal reading list"
+description: "Books to consume in the year 2023"
+pubDate: "May 16 2023"
 ---
 
-Reading with Lex Fridman, long form
+Books for 2023
 
-[Here is Lex's reading list](https://lexfridman.com/reading-list)
+- [ ][Character](https://www.goodreads.com/book/show/25990925-character) by 
+Jay R. Elliot 
+
+This list was originally inspired by Lex Fridman, see [his list here](https://lexfridman.com/reading-list).
+
+
