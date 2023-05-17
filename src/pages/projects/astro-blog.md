@@ -1,29 +1,27 @@
 ---
 layout: "../../layouts/Projects.astro"
-title: "Astro blog"
-description: "Astro blog updates"
+title: "Astro Notion"
+description: "List of updates"
 pubDate: "Jan 02 2023"
 ---
 
-This blog is a long term project of two aspects: designing and writing. 
-
-Here, design updates are tracked.
+A long term project of designing and writing process. 
 
 ## Updates
 
-Apr 10: Images integration
-Mar 15: Pipeline to use Notion for CMS complete
-Jan 02: Launch of first post, github as repository
+Apr 10 2023, Integrate Image  
+Mar 15 2023, Complete Notion CMS Pipeline  
+Jan 02 2023, First Post Initiation  
 
 ## To-do
 
-Prettify code snippets with language stated
-Write notion block conversion
-Remove dependencies that may break
-Turborepo
-Render direct from CMS
-Not found page
-Favicon
-Allow both local and Notion markdown pages
-Show references to other text snippets
+- [ ] Prettify snippets with source
+- [ ] Write my own block-to-md functions
+- [ ] Remove dependencies
+- [ ] Turborepo
+- [ ] Faster no-compile CMS posting
+- [ ] Display error pages
+- [ ] Add tab image (favicon)
+- [ ] Display local + Notion markdown
+- [ ] Render preview of snippet references
 

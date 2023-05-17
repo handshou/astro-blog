@@ -1,20 +1,17 @@
 ---
 layout: "../../layouts/Projects.astro"
-title: "Mixtime"
-description: "Timetabling app which mixes schedules from members of your team."
+title: "Mix Time"
+description: "See group schedules in a neat timetable."
 pubDate: "May 15 2023"
 ---
 
-This app is designed for web usage to tackle the hassle of arranging a 
-suitable time for group meetings. We found that a common time is difficult to
-find when there are three or more group members.
+## Designed in the browser.
 
-Using a timetabling solution which almost all NUS students are familiar with,
-we built a meeting scheduling notebook. 
+Declash free time for group meetings, especially troublesome with 3+ group members.
 
-This project looks at similar aspects
-as whenisgood.net and aims to provide better user-friendly features at no cost!
+Use NUSMODs timetables to find free time at a glance!
 
-See code: https://github.com/handshou/mix
-Live demo: handshou.github.io/mix
+### See code: https://github.com/handshou/mix
+
+### Live demo: https://handshou.github.io/mix
 
