@@ -23,7 +23,7 @@ export default defineConfig({
       {
         name: "projects",
         label: "Projects",
-        path: "src/pages/projects",
+        path: "src/content/projects",
         format: "md",
         fields: [
           {
@@ -57,7 +57,7 @@ export default defineConfig({
       {
         name: "post",
         label: "Posts",
-        path: "src/pages/blog",
+        path: "src/content/posts",
         format: "mdx",
         fields: [
           {
@@ -65,12 +65,6 @@ export default defineConfig({
             name: "title",
             label: "Title",
             isTitle: true,
-            required: true,
-          },
-          {
-            type: "string",
-            name: "slug",
-            label: "Slug",
             required: true,
           },
           {

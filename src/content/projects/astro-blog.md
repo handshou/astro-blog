@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/Projects.astro"
 title: "Astro Notion"
 description: "List of updates"
 pubDate: "Jan 02 2023"

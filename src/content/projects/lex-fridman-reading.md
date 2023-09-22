@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/Projects.astro"
 title: "Reading list"
 description: "Books on Ethics, Governance and Psychology."
 pubDate: "May 16 2023"

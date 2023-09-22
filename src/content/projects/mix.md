@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/Projects.astro"
 title: "Mix Time"
 description: "See group schedules in a neat timetable."
 pubDate: "May 15 2023"
