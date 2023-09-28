@@ -25,6 +25,11 @@ export default defineConfig({
         label: "Projects",
         path: "src/content/projects",
         format: "md",
+        ui: {
+            router: (props) => {
+                return `/projects/${props.document._sys.filename.toLowerCase()}/`
+            },
+        },
         fields: [
           {
             type: "string",
