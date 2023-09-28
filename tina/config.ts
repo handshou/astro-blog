@@ -27,7 +27,7 @@ export default defineConfig({
         format: "md",
         ui: {
             router: (props) => {
-                return `/projects/${props.document._sys.filename.toLowerCase()}/`
+                return `/projects/${props.document._sys.filename.toLowerCase()}`
             },
         },
         fields: [
