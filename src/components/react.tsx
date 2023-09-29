@@ -25,6 +25,9 @@ export const MyComponent = (props) => {
             }
             <hr />
             <TinaMarkdown content={data.projects.body} />
+            <pre>
+            {JSON.stringify(data, null, 2)}
+            </pre>
         </>
     );
 };

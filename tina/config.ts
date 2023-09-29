@@ -26,6 +26,15 @@ export default defineConfig({
         path: "src/content/projects",
         format: "md",
         ui: {
+            filename: {
+                readonly: true,
+                slugify: (values) => {
+                    // Values is an object containing all the values of the form. In this case it is {title?: string, topic?: string}
+                    return `${values?.topic || 'no-topic'}-${values?.title
+                        ?.toLowerCase()
+                        .replace(/ /g, '-')}`
+                },
+            },
             router: (props) => {
                 return `/projects/${props.document._sys.filename.toLowerCase()}`
             },
