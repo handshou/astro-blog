@@ -4,6 +4,8 @@ import BaseLayout from '../../layouts/Projects.astro';
 import { client } from '../../../tina/__generated__/client';
 import { MyComponent } from '../../components/react';
 
+Astro.response.headers.set('Cache-Control', 'max-age=3600')
+
 const { slug } = Astro.params;
 
 const response = await client.queries.projects({relativePath: `${slug}.md`})
