@@ -37,8 +37,6 @@ export default defineConfig({
             type: "datetime",
             name: "pubDate",
             label: "Published date",
-            component: "date",
-            dateFormat: "MMM DD YYYY",
           },
           {
             type: "string",
@@ -71,8 +69,6 @@ export default defineConfig({
             type: "datetime",
             name: "pubDate",
             label: "Published date",
-            component: "date",
-            dateFormat: "MMM DD YYYY",
           },
           {
             type: "string",
