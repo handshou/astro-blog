@@ -53,7 +53,7 @@ export default defineConfig({
         ],
       },
       {
-        name: "post",
+        name: "posts",
         label: "Posts",
         path: "src/content/posts",
         format: "mdx",
