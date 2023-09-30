@@ -4,7 +4,7 @@ import { TinaMarkdown } from "tinacms/dist/rich-text";
 export const MyComponent = (props) => {
     const { data } = useTina(props);
 
-    const { title, pubDate: unPubDate, updatedDate } = data.projects;
+    const { title, pubDate: unPubDate, updatedDate } = data.posts;
 
     const pubDate =	new Date(unPubDate).toLocaleDateString('en-us', {
         year: 'numeric',
@@ -24,7 +24,7 @@ export const MyComponent = (props) => {
                     )
             }
             <hr />
-            <TinaMarkdown content={data.projects.body} />
+            <TinaMarkdown content={data.posts.body} />
         </>
     );
 };

@@ -69,10 +69,24 @@ export default defineConfig({
         ],
       },
       {
-        name: "post",
+        name: "posts",
         label: "Posts",
         path: "src/content/posts",
         format: "mdx",
+        ui: {
+            filename: {
+                readonly: true,
+                slugify: (values) => {
+                    // Values is an object containing all the values of the form. In this case it is {title?: string, topic?: string}
+                    return `${values?.topic || 'no-topic'}-${values?.title
+                        ?.toLowerCase()
+                        .replace(/ /g, '-')}`
+                },
+            },
+            router: (props) => {
+                return `/blog/${props.document._sys.filename.toLowerCase()}`
+            },
+        },
         fields: [
           {
             type: "string",
