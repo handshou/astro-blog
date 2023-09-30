@@ -46,16 +46,6 @@ let pubDate = new Date(unconvertedPubDate).toLocaleString('en-CA', {
                     <Backtrack url="/projects" title="back to 👨‍💻 projects" />
                     <br />
 					{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-					<h1 class="title">{title}</h1>
-					{pubDate && <time datetime="MMM-DD-YYYY">{pubDate}</time>}
-					{
-						updatedDate && (
-							<div>
-								Last updated on <time>{updatedDate}</time>
-							</div>
-						)
-					}
-					<hr />
 					<slot />
 				</article>
 			</main>

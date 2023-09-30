@@ -48,7 +48,7 @@ const projects = await projectsCollection.sort(
 											month: 'short',
 											day: 'numeric',
 									})}`}
-									url={`/projects/${proj.slug}/`}>
+									url={`/projects/${proj.slug}`}>
 									{proj.data.description}
 								</Card>
 							))
