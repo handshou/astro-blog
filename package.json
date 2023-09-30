@@ -24,6 +24,7 @@
     "tinacms": "^1.5.20"
   },
   "devDependencies": {
+    "@types/node": "^20.7.1",
     "sass": "^1.57.1"
   }
 }
