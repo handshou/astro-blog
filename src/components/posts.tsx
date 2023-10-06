@@ -1,9 +1,9 @@
 import { useTina } from "tinacms/dist/react";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
-import { PageQuery } from "../../tina/__generated__/types";
+import { PostsQuery } from "../../tina/__generated__/types";
 
 export const MyComponent = (props: {
-    data: PageQuery,
+    data: PostsQuery,
     variables: {
         relativePath: string
     },
